@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlyBets Kazino - Aviator va Qiziqarli O'yinlar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Melbet - Apple of Fortune</title>
     <style>
         * {
             margin: 0;
@@ -14,513 +13,1083 @@
         }
         
         body {
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: white;
-            line-height: 1.5;
+            background: linear-gradient(135deg, #1a2a3a, #0d1b2a);
+            color: #fff;
+            min-height: 100vh;
             overflow-x: hidden;
-            font-size: 14px;
+            padding: 15px;
         }
         
         .container {
             max-width: 100%;
             margin: 0 auto;
-            padding: 15px;
+            padding-bottom: 70px; /* ID almashtirish tugmasi uchun joy */
         }
         
         header {
             text-align: center;
             padding: 20px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            position: relative;
         }
         
-        .logo {
-            font-size: 2.2rem;
+        .melbet-logo {
+            position: absolute;
+            top: 10px;
+            left: 15px;
             font-weight: bold;
+            color: #FFD700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
             margin-bottom: 8px;
-            background: linear-gradient(45deg, #FFD700, #FFA500, #FF8C00);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-            animation: pulse 2s infinite alternate;
+            color: #4CAF50;
+            text-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
+        
+        .apple-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: pulse 2s infinite;
         }
         
         @keyframes pulse {
             0% { transform: scale(1); }
-            100% { transform: scale(1.03); }
-        }
-        
-        .tagline {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: #ffcc00;
-            animation: fadeIn 2s ease-in-out;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .hero {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            animation: slideUp 1s ease-out;
-        }
-        
-        @keyframes slideUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        
-        .hero h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #ffcc00;
-        }
-        
-        .hero p {
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-        
-        .bonus-box {
-            background: linear-gradient(45deg, #FF512F, #F09819, #FF512F);
-            background-size: 200% 200%;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.5);
-            animation: gradientShift 3s infinite alternate, bounce 2s infinite;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .bonus-box::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
-            animation: shine 5s infinite linear;
-        }
-        
-        @keyframes shine {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-        
-        .bonus-box h3 {
-            font-size: 1.3rem;
-            margin-bottom: 8px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        
-        .bonus-amount {
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            animation: countUp 2s ease-out;
-        }
-        
-        @keyframes countUp {
-            from { transform: scale(0.5); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-        
-        .promo-code {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 15px;
-            border-radius: 6px;
-            display: inline-block;
-            margin: 10px 0;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border: 2px dashed white;
-            animation: pulseCode 1.5s infinite;
-        }
-        
-        @keyframes pulseCode {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
+            50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
         
-        .btn-register {
-            display: inline-block;
-            background: linear-gradient(45deg, #00b09b, #96c93d);
-            color: white;
-            padding: 12px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            margin: 15px 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            position: relative;
-            overflow: hidden;
-            animation: pulseBtn 2s infinite;
-        }
-        
-        .btn-register::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: 0.5s;
-        }
-        
-        .btn-register:hover::before {
-            left: 100%;
-        }
-        
-        @keyframes pulseBtn {
-            0% { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-            50% { box-shadow: 0 4px 15px rgba(0, 176, 155, 0.7); }
-            100% { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-        }
-        
-        .btn-register:hover {
-            transform: translateY(-3px);
-        }
-        
-        .features {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 25px 0;
-        }
-        
-        .feature {
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-            animation: fadeInUp 1s ease-out;
-        }
-        
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-        
-        @keyframes fadeInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        
-        .feature h3 {
-            color: #ffcc00;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .feature h3 i {
-            font-size: 1.1rem;
-        }
-        
-        .games {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
-            animation: fadeIn 1.5s ease-out;
-        }
-        
-        .games h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #ffcc00;
-            font-size: 1.5rem;
-        }
-        
-        .game-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-        
-        .game-item {
-            text-align: center;
-            padding: 15px 10px;
-            border-radius: 8px;
+        .card {
             background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            animation: fadeIn 1s ease-out;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
         }
         
-        .game-item:hover {
-            background: rgba(255, 215, 0, 0.2);
-            transform: scale(1.03);
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #4CAF50;
         }
         
-        .game-icon {
-            font-size: 2.5rem;
-            margin-bottom: 8px;
-            color: #ffcc00;
-            animation: float 3s infinite ease-in-out;
+        .card p {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-bottom: 15px;
         }
         
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-            100% { transform: translateY(0); }
+        .form-group {
+            margin-bottom: 15px;
         }
         
-        .game-item h3 {
-            font-size: 1rem;
-            margin-bottom: 5px;
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4CAF50;
+            font-size: 0.9rem;
         }
         
-        .game-item p {
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+        }
+        
+        .error-message {
+            color: #ff6b6b;
             font-size: 0.8rem;
-            opacity: 0.9;
+            margin-top: 4px;
+            display: none;
         }
         
-        footer {
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 25px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 8px;
-            animation: fadeIn 2s ease-out;
+            margin-top: 8px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
         }
         
         .warning {
-            color: #ffcc00;
-            font-size: 0.8rem;
-            margin-top: 15px;
-            line-height: 1.3;
+            background: rgba(255, 193, 7, 0.2);
+            border-left: 4px solid #FFC107;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 15px 0;
         }
         
-        .particles {
+        .warning p {
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+        }
+        
+        .apples-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: nowrap;
+            gap: 8px;
+            overflow-x: auto;
+            padding: 8px 0;
+            max-width: 100%;
+        }
+        
+        /* Olma stillari */
+        .mystery-apple, .apple {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 2px solid transparent;
+        }
+        
+        .mystery-apple {
+            background-image: url('https://i.ibb.co/Gf3NcMDQ/maxresdefault.jpg');
+            border: 2px dashed #888;
+        }
+        
+        .apple {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: reveal 0.5s ease;
+            border: 2px solid #ffd700;
+        }
+        
+        @keyframes reveal {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .apple:hover {
+            transform: scale(1.05);
+            border-color: #4CAF50;
+        }
+        
+        .apple.whole {
+            background-image: url('https://i.pinimg.com/736x/6a/aa/19/6aaa196961f40afd21cf9d21824f137e.jpg');
+        }
+        
+        .apple.bitten {
+            background-image: url('https://i.ibb.co/m5sNvNPK/62cd09ea-de08-49b9-9fea-d0100c747423-2.jpg');
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        .hacker-animation {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+        
+        .matrix-code {
+            color: #0f0;
+            font-family: monospace;
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .progress-bar {
+            width: 80%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
             overflow: hidden;
+            margin: 15px 0;
         }
         
-        .particle {
-            position: absolute;
-            background: rgba(255, 215, 0, 0.3);
-            border-radius: 50%;
-            animation: floatParticle 15s infinite linear;
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            width: 0%;
+            transition: width 3s ease;
         }
         
-        @keyframes floatParticle {
-            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 0.5; }
-            90% { opacity: 0.5; }
-            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        .result-message {
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            margin: 15px 0;
+            border-radius: 8px;
+            line-height: 1.4;
         }
         
-        /* Kichik ekranlar uchun qo'shimcha sozlamalar */
-        @media (max-width: 380px) {
-            .logo {
-                font-size: 1.8rem;
+        .success {
+            background: rgba(76, 175, 80, 0.2);
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .failure {
+            background: rgba(244, 67, 54, 0.2);
+            border-left: 4px solid #F44336;
+        }
+        
+        .info-box {
+            background: rgba(33, 150, 243, 0.2);
+            border-left: 4px solid #2196F3;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .info-box p {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+        
+        .user-id-display {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 12px 0;
+            text-align: center;
+            border-left: 3px solid #4CAF50;
+            font-size: 0.9rem;
+        }
+        
+        .reveal-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        .money-highlight {
+            color: #FFD700;
+            font-weight: bold;
+            text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .round-indicator {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .prize-section {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        
+        .share-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .telegram-auto-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .telegram-auto-btn {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .telegram-auto-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .share-instruction {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .share-instruction p {
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+            color: #FFD700;
+        }
+        
+        .game-over-section {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(244, 67, 54, 0.2);
+            border-radius: 8px;
+            border-left: 4px solid #F44336;
+        }
+        
+        .registration-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .registration-buttons .btn {
+            flex: 1;
+        }
+        
+        .register-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+        }
+        
+        /* ID almashtirish tugmasi */
+        .change-id-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+        
+        .change-id-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(156, 39, 176, 0.6);
+        }
+        
+        /* Keyingi qator tugmasi */
+        .next-round-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            margin-top: 15px;
+        }
+        
+        /* Kichik ekranlar uchun maxsus sozlamalar */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
             }
             
-            .hero h2 {
+            header {
+                padding: 15px 0;
+                margin-bottom: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .subtitle {
+                font-size: 0.8rem;
+                padding: 0 8px;
+            }
+            
+            .apple-icon {
+                font-size: 2.5rem;
+            }
+            
+            .card {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .card h2 {
+                font-size: 1.1rem;
+            }
+            
+            .card p {
+                font-size: 0.8rem;
+            }
+            
+            .mystery-apple, .apple {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .apples-container {
+                gap: 6px;
+                margin: 15px 0;
+            }
+            
+            .btn {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            
+            .user-id-display {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+
+            .telegram-auto-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .registration-buttons {
+                flex-direction: column;
+            }
+            
+            .change-id-btn {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px 16px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .mystery-apple, .apple {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .apples-container {
+                gap: 5px;
+            }
+            
+            h1 {
                 font-size: 1.3rem;
             }
             
-            .bonus-amount {
-                font-size: 1.7rem;
+            .subtitle {
+                font-size: 0.75rem;
             }
             
-            .game-list {
-                grid-template-columns: 1fr;
-            }
-            
-            .btn-register {
-                padding: 10px 25px;
-                font-size: 1rem;
+            .change-id-btn {
+                bottom: 10px;
+                right: 10px;
+                padding: 8px 14px;
             }
         }
         
-        @media (min-width: 768px) {
-            .container {
-                max-width: 700px;
+        /* Kichik ekranda olmalar sig'masa */
+        @media (max-width: 320px) {
+            .mystery-apple, .apple {
+                width: 42px;
+                height: 42px;
             }
             
-            .game-list {
-                grid-template-columns: repeat(3, 1fr);
+            .apples-container {
+                gap: 4px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="particles" id="particles"></div>
-    
     <div class="container">
         <header>
-            <div class="logo">ONLYBETS</div>
-            <div class="tagline">Kazino ishqibozlari uchun ishonchli va xavfsiz platforma</div>
+            <div class="melbet-logo">🎰 Melbet</div>
+            <div class="apple-icon">🍎</div>
+            <h1>Melbet - Apple of Fortune</h1>
+            <p class="subtitle">G'alaba strategiyasi bilan! <span class="money-highlight">Pul ishlang! AIFUT promokod bilan to'liq ro'yxatdan o'ting!</span></p>
         </header>
         
-        <section class="hero">
-            <h2>Aviator va ko'plab qiziqarli o'yinlar</h2>
-            <p>Bizning kazinoda siz Aviator, slotlar va boshqa ko'plab qiziqarli o'yinlarni topasiz. Har bir o'yin hayajon va yirik yutuqlar va'dasini beradi!</p>
+        <div class="card" id="loginSection">
+            <h2>O'yinni boshlash</h2>
+            <p><span class="money-highlight">Daromad olishni boshlang!</span> Signallarni to'g'ri qabol qilish uchun Melbet platformasida AIFUT promokodi orqali ro'yxatdan o'tgan ID raqamingizni kiriting va pul ko'paytirishni boshlang!</p>
             
-            <div class="bonus-box">
-                <h3>Maxsus yangi o'yinchi bonusi</h3>
-                <div class="bonus-amount">12,500,000 UZS</div>
-                <p>gacha bonus</p>
-                <div class="promo-code">Promokod: AIFUT</div>
-                <p>Ro'yxatdan o'ting va darhol o'ynashni boshlang!</p>
+            <div class="form-group">
+                <label for="userId">Melbet ID Raqamingiz</label>
+                <input type="text" id="userId" placeholder="Melbet ID raqamni yozing..." maxlength="11" value="">
+                <div class="error-message" id="idError">ID raqam to'g'ri kiritilishi shart</div>
             </div>
             
-            <a href="https://onlybetscasino1.com/ru/register?promo=AIFUT" class="btn-register">HOZIR RO'YXATDAN O'TING</a>
-        </section>
+            <button class="btn" id="startGameBtn">Pul Ko'paytirishni Boshlash</button>
+            
+            <div class="registration-buttons">
+                <a href="https://refpa42380.com/L?tag=s_4856673m_66333c_&site=4856673&ad=66333" target="_blank" class="btn register-btn">Ro'yxatdan o'tish</a>
+                <a href="https://refpa42380.com/L?tag=s_4856673m_126660c_&site=4856673&ad=126660" target="_blank" class="btn download-btn">APK Yuklab olish</a>
+            </div>
+        </div>
         
-        <section class="features">
-            <div class="feature">
-                <h3><i class="fas fa-shield-alt"></i> Ishonchli va xavfsiz pul yutuqlari</h3>
-                <p>Bizning platformamizda barcha tranzaksiyalar maxshiylik va xavfsizlik bilan amalga oshiriladi. Sizning pulingiz va shaxsiy ma'lumotlaringiz himoya ostida.</p>
+        <div id="warningSection" class="card hidden">
+            <h2>⚠️ Diqqat! Ogohlantirish</h2>
+            <div class="warning">
+                <p><strong>AZARTga berilmang! 🎲</strong></p>
+                <p>Kunlik yetarli daromadni olib to'xtating. Melbet platformasida AIFUT promokod orqali ro'yxatdan o'tgan bo'lishingiz shart, shunda aniq signal olasiz.</p>
             </div>
             
-            <div class="feature">
-                <h3><i class="fas fa-bolt"></i> Tez pul to'ldirish va chiqarish</h3>
-                <p>Xohlagan paytingizda tez va oson hisobingizni to'ldirishingiz yoki yutuqlaringizni chiqarib olishingiz mumkin. Bizning tizimimiz 24/7 ishlaydi.</p>
+            <div class="user-id-display">
+                <strong>Melbet ID Raqamingiz:</strong> <span id="displayUserId"></span>
             </div>
-        </section>
-        
-        <section class="games">
-            <h2>Bizning Mashhur O'yinlar</h2>
-            <div class="game-list">
-                <div class="game-item">
-                    <div class="game-icon">✈️</div>
-                    <h3>Aviator</h3>
-                    <p>Eng mashhur kazino o'yini</p>
-                </div>
-                
-                <div class="game-item">
-                    <div class="game-icon">🎰</div>
-                    <h3>Slotlar</h3>
-                    <p>Turli xil tematik slotlar</p>
-                </div>
-                
-                <div class="game-item">
-                    <div class="game-icon">🃏</div>
-                    <h3>Karta o'yinlari</h3>
-                    <p>Blackjack, Poker va boshqalar</p>
-                </div>
-                
-                <div class="game-item">
-                    <div class="game-icon">🎲</div>
-                    <h3>Ruletka</h3>
-                    <p>Klassik va zamonaviy versiyalar</p>
-                </div>
-                
-                <div class="game-item">
-                    <div class="game-icon">🎯</div>
-                    <h3>Jonli kazino</h3>
-                    <p>Haqiqiy dilerlar bilan o'ynash</p>
-                </div>
-                
-                <div class="game-item">
-                    <div class="game-icon">💰</div>
-                    <h3>Jackpot</h3>
-                    <p>Hayotni o'zgartiruvchi yutuqlar</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="hero">
-            <h2>G'alabalaringizni boshlang!</h2>
-            <p>Endi ro'yxatdan o'ting va AIFUT promokodi orqali 12,500,000 UZS gacha bonusni qo'lga kiriting. Faqatgina bizning platformamizda siz eng yaxshi kazino tajribasiga ega bo'lasiz.</p>
             
-            <a href="https://onlybetscasino1.com/ru/register?promo=AIFUT" class="btn-register">BEPUL RO'YXATDAN O'TISH</a>
-        </section>
+            <p><span class="money-highlight">Tayyor bo'lsangiz, daromad olishni boshlang! 💰</span></p>
+            <button class="btn" id="confirmStartBtn">Daromad Olishni Boshlash 🚀</button>
+        </div>
         
-        <footer>
-            <p>OnlyBets Kazino - Sizning ishonchli o'yin hamkoringiz</p>
-            <p class="warning">O'yin qonuniy yoshga etganlar uchun mo'ljallangan. O'z javobgarligingizni anglab o'ynang.</p>
-        </footer>
+        <div id="gameSection" class="card hidden">
+            <h2>Apple of Fortune 🍎</h2>
+            
+            <div class="user-id-display">
+                <strong>Melbet ID Raqamingiz:</strong> <span id="gameUserId"></span>
+            </div>
+            
+            <div class="round-indicator" id="roundIndicator">signal: 1</div>
+            
+            <p><span class="money-highlight">ID raqamingiz ko'rsatilgan profildan o'yinga kiring va togri olmali qatorni tanlang✅</span> Butun olmani tanlang va kegingi qatorni korish tugmasini bosing! 🎯</p>
+            
+            <div class="apples-container" id="applesContainer">
+                <!-- Sirli olmalar JavaScript orqali yaratiladi -->
+            </div>
+            
+            <button class="btn reveal-btn" id="revealBtn">Olmalarni Ko'rish 👀</button>
+            
+            <div id="resultMessage" class="result-message hidden"></div>
+            
+            <button class="btn hidden" id="continueBtn">Keyingi Bosqich ➡️</button>
+            <button class="btn hidden" id="restartBtn">Qayta Boshlash 🔄</button>
+        </div>
+        
+        <div id="shareSection" class="card hidden">
+            <h2>Do'stlaringizni taklif qiling 📢</h2>
+            
+            <div class="user-id-display">
+                <strong>signal uchun Melbet ID Raqamingiz:</strong> <span id="shareUserId"></span>
+            </div>
+            
+            <div class="round-indicator" id="shareRoundIndicator">signal: 1</div>
+            
+            <p><span class="money-highlight">Kegingi qatorlarga  signal olish uchun 25 ta odam taklif qilishingiz kerak bot silkasini yuboring yuborganingizdan song kegingi qatorni korish < tugmasi paydo boladi 💸</span></p>
+
+            <div class="share-instruction">
+                <p>📱 <strong>25 ta odam taklif qilganingizdan song signal olishingiz mumkin!</strong></p>
+                <p>Tarqatish tugmasi orqali dostlarga yuboring</p>
+            </div>
+
+            <div class="telegram-auto-section">
+                <button class="telegram-auto-btn" id="telegramAutoBtn">
+                    <span>📲 Tarqatish</span>
+                </button>
+            </div>
+            
+            <div class="info-box">
+                <p><strong>Eslatma:</strong> Tarqatish tugmasini bosib 25 ta dostingizga xabarni yuborsangiz kegingi qatorlar uchun signal olishingiz mumkin .</p>
+            </div>
+            
+            <button class="btn next-round-btn hidden" id="continueAfterShareBtn">Keyingi Qatorni Ko'rish ➡️</button>
+        </div>
+        
+        <div id="prizeSection" class="card hidden">
+            <h2>Tabriklaymiz! 🎉</h2>
+            
+            <div class="user-id-display">
+                <strong>Melbet ID Raqamingiz:</strong> <span id="prizeUserId"></span>
+            </div>
+            
+            <div class="prize-section">
+                <h3>xavf kopayib ketdi yutuqni shu yerda oling va qayta oyinni 2 soatdan song oynang!</h3>
+                <p><span class="money-highlight">Yutuqni oling va qayta o'yin boshlang!</span></p>
+                <p>Qayta oyin 2 soatdan song oynalsa ishonchli signallar olasin tezda qayta oyin boshlash maglubiyatga sababchi boladi!</p>
+            </div>
+            
+            <button class="btn" id="playAgainBtn">Yutuqni Oling va Qayta O'ynash 🔄</button>
+        </div>
+        
+        <div id="gameOverSection" class="card hidden">
+            <h2>O'yin Tugadi 🎯</h2>
+            
+            <div class="user-id-display">
+                <strong>Melbet ID Raqamingiz:</strong> <span id="gameOverUserId"></span>
+            </div>
+            
+            <div class="game-over-section">
+                <h3>O'yin yakunlandi!</h3>
+                <p><span class="money-highlight">BERILGAN <span id="finalRound">3</span> SIGNALNI muvaffaqiyatli yakunladingiz KEGINGI QATORLARDA XAVF YUQORI!</span></p>
+                <p>Oyinni yakunlang yutugni olib 30 daqiqadan song qayta oynang va katta yutuqlarga erishing!</p>
+            </div>
+            
+            <button class="btn" id="restartAfterGameOverBtn">Qayta Signal olish 🔄</button>
+        </div>
+    </div>
+    
+    <!-- ID almashtirish tugmasi -->
+    <button class="change-id-btn" id="changeIdBtn">
+        <span>🔄 ID Almashtirish</span>
+    </button>
+    
+    <div id="hackerAnimation" class="hacker-animation hidden">
+        <div class="matrix-code" id="matrixCode">HACKING APPLE OF FORTUNE...</div>
+        <div class="progress-bar">
+            <div class="progress" id="hackerProgress"></div>
+        </div>
     </div>
 
     <script>
-        // Partikellar yaratish
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = 20; // Kamroq partikella mobil uchun
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elementlarni olish
+            const loginSection = document.getElementById('loginSection');
+            const startGameBtn = document.getElementById('startGameBtn');
+            const warningSection = document.getElementById('warningSection');
+            const confirmStartBtn = document.getElementById('confirmStartBtn');
+            const gameSection = document.getElementById('gameSection');
+            const applesContainer = document.getElementById('applesContainer');
+            const revealBtn = document.getElementById('revealBtn');
+            const resultMessage = document.getElementById('resultMessage');
+            const continueBtn = document.getElementById('continueBtn');
+            const restartBtn = document.getElementById('restartBtn');
+            const shareSection = document.getElementById('shareSection');
+            const telegramAutoBtn = document.getElementById('telegramAutoBtn');
+            const continueAfterShareBtn = document.getElementById('continueAfterShareBtn');
+            const prizeSection = document.getElementById('prizeSection');
+            const playAgainBtn = document.getElementById('playAgainBtn');
+            const gameOverSection = document.getElementById('gameOverSection');
+            const restartAfterGameOverBtn = document.getElementById('restartAfterGameOverBtn');
+            const finalRound = document.getElementById('finalRound');
+            const hackerAnimation = document.getElementById('hackerAnimation');
+            const matrixCode = document.getElementById('matrixCode');
+            const hackerProgress = document.getElementById('hackerProgress');
+            const idError = document.getElementById('idError');
+            const userIdInput = document.getElementById('userId');
+            const roundIndicator = document.getElementById('roundIndicator');
+            const shareRoundIndicator = document.getElementById('shareRoundIndicator');
+            const gameOverUserId = document.getElementById('gameOverUserId');
+            const changeIdBtn = document.getElementById('changeIdBtn');
             
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Tasodifiy o'lcham va joylashuv
-                const size = Math.random() * 10 + 3; // Kichikroq o'lcham
-                const left = Math.random() * 100;
-                const animationDuration = Math.random() * 15 + 10;
-                const animationDelay = Math.random() * 5;
-                
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                particle.style.left = `${left}vw`;
-                particle.style.animationDuration = `${animationDuration}s`;
-                particle.style.animationDelay = `${animationDelay}s`;
-                
-                particlesContainer.appendChild(particle);
-            }
-        }
-        
-        // Sahifa yuklanganda partikellarni yaratish
-        document.addEventListener('DOMContentLoaded', createParticles);
-        
-        // Bonus miqdorini animatsiya qilish
-        function animateBonus() {
-            const bonusElement = document.querySelector('.bonus-amount');
-            let currentValue = 0;
-            const targetValue = 12500000;
-            const duration = 2000;
-            const steps = 60;
-            const increment = targetValue / steps;
-            const stepTime = duration / steps;
+            // ID ko'rsatish elementlari
+            const displayUserId = document.getElementById('displayUserId');
+            const gameUserId = document.getElementById('gameUserId');
+            const shareUserId = document.getElementById('shareUserId');
+            const prizeUserId = document.getElementById('prizeUserId');
             
-            const timer = setInterval(() => {
-                currentValue += increment;
-                if (currentValue >= targetValue) {
-                    currentValue = targetValue;
-                    clearInterval(timer);
+            let currentRound = 1;
+            let gameActive = false;
+            let currentUserId = '';
+            let applesRevealed = false;
+            let maxRounds = 0; // Tasodifiy maksimal qatorlar soni
+            let shared = false; // Tarqatish amalga oshirilganligini tekshirish
+
+            // Telegram xabari
+            const telegramMessage = `Salom dostim! 🚀
+
+Melbet platformasida 100% signal beruvchi va daromad qilish mumkin bo'lgan o'yin topdim!
+
+👉 t.me/Strategioyinlar_bot
+
+🎯 AIFUT promokodi bilan ro'yxatdan o'ting va 200% bonus oling!
+
+💰 Katta yutuqlar sizni kutmoqda!`;
+            
+            // Sahifa yuklanganda saqlangan ID ni o'qish
+            function loadSavedUserId() {
+                const savedUserId = localStorage.getItem('appleFortuneUserId');
+                if (savedUserId && validateUserId(savedUserId)) {
+                    userIdInput.value = savedUserId;
+                    currentUserId = savedUserId;
+                    // Agar ID saqlangan bo'lsa, to'g'ridan-to'g'ri ogohlantirish bo'limiga o'tish
+                    loginSection.classList.add('hidden');
+                    warningSection.classList.remove('hidden');
+                    displayUserId.textContent = savedUserId;
                 }
-                bonusElement.textContent = Math.floor(currentValue).toLocaleString('uz-UZ') + ' UZS';
-            }, stepTime);
-        }
-        
-        // Sahifa yuklanganda bonus animatsiyasini boshlash
-        window.onload = animateBonus;
-        
-        // Mobil qurilmalarda animatsiyalarni optimallashtirish
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // Mobil qurilmalarda kamroq intensiv animatsiyalar
-            document.documentElement.style.setProperty('--animation-intensity', '0.5');
-        }
+            }
+            
+            // ID raqamni tekshirish
+            function validateUserId(userId) {
+                const idRegex = /^1\d{8,10}$/; // 1 bilan boshlanadi, 9-11 xonali
+                return idRegex.test(userId);
+            }
+            
+            // ID inputini tekshirish
+            userIdInput.addEventListener('input', function() {
+                const userId = this.value.trim();
+                if (userId === '') {
+                    idError.style.display = 'none';
+                    startGameBtn.disabled = false;
+                } else if (!validateUserId(userId)) {
+                    idError.style.display = 'block';
+                    startGameBtn.disabled = true;
+                } else {
+                    idError.style.display = 'none';
+                    startGameBtn.disabled = false;
+                }
+            });
+            
+            // O'yinni boshlash
+            startGameBtn.addEventListener('click', function() {
+                const userId = userIdInput.value.trim();
+                
+                if (userId === '') {
+                    alert('Iltimos, Melbet ID raqamingizni kiriting!');
+                    return;
+                }
+                
+                if (!validateUserId(userId)) {
+                    alert('Melbet ID raqam 1 bilan boshlanadi va 9-11 xonali bo\'lishi kerak!');
+                    return;
+                }
+                
+                currentUserId = userId;
+                // ID ni localStorage ga saqlash
+                localStorage.setItem('appleFortuneUserId', userId);
+                displayUserId.textContent = userId;
+                
+                // Login bo'limini yashirish va ogohlantirishni ko'rsatish
+                loginSection.classList.add('hidden');
+                warningSection.classList.remove('hidden');
+            });
+            
+            // ID almashtirish tugmasi
+            changeIdBtn.addEventListener('click', function() {
+                // Barcha bo'limlarni yashirish
+                warningSection.classList.add('hidden');
+                gameSection.classList.add('hidden');
+                shareSection.classList.add('hidden');
+                prizeSection.classList.add('hidden');
+                gameOverSection.classList.add('hidden');
+                
+                // Login bo'limini ko'rsatish
+                loginSection.classList.remove('hidden');
+                
+                // ID maydonini tozalash
+                userIdInput.value = '';
+                userIdInput.focus();
+                
+                // O'yin holatini qayta tiklash
+                currentRound = 1;
+                gameActive = false;
+                applesRevealed = false;
+                shared = false;
+            });
+            
+            // Tasdiqlash tugmasi
+            confirmStartBtn.addEventListener('click', function() {
+                warningSection.classList.add('hidden');
+                // Tasodifiy maksimal qatorlar sonini belgilash (3-6 oralig'ida)
+                maxRounds = Math.floor(Math.random() * 4) + 3; // 3, 4, 5 yoki 6
+                startHackerAnimation();
+            });
+            
+            // Haker animatsiyasi
+            function startHackerAnimation() {
+                hackerAnimation.classList.remove('hidden');
+                hackerProgress.style.width = '0%';
+                
+                // Matrix kod effekti
+                const codes = ['HACKING SECURITY...', 'ACCESSING SERVER...', 'DECRYPTING DATA...', 'LOADING STRATEGY...', 'SUCCESS!'];
+                let codeIndex = 0;
+                
+                const codeInterval = setInterval(() => {
+                    matrixCode.textContent = codes[codeIndex];
+                    codeIndex++;
+                    
+                    if (codeIndex >= codes.length) {
+                        clearInterval(codeInterval);
+                    }
+                }, 600);
+                
+                // Progress bari
+                setTimeout(() => {
+                    hackerProgress.style.width = '100%';
+                }, 100);
+                
+                // Animatsiya tugagach o'yinni boshlash
+                setTimeout(() => {
+                    hackerAnimation.classList.add('hidden');
+                    startGame();
+                }, 3000);
+            }
+            
+            // O'yinni boshlash
+            function startGame() {
+                gameSection.classList.remove('hidden');
+                gameUserId.textContent = currentUserId;
+                gameActive = false;
+                applesRevealed = false;
+                updateRoundIndicator();
+                createMysteryApples();
+            }
+            
+            // Qator ko'rsatkichini yangilash
+            function updateRoundIndicator() {
+                roundIndicator.textContent = `Signal: ${currentRound}`;
+            }
+            
+            // Sirli olmalarni yaratish
+            function createMysteryApples() {
+                applesContainer.innerHTML = '';
+                resultMessage.classList.add('hidden');
+                continueBtn.classList.add('hidden');
+                restartBtn.classList.add('hidden');
+                revealBtn.classList.remove('hidden');
+                revealBtn.disabled = false;
+                revealBtn.textContent = 'Olmalarni Ko\'rish 👀';
+                
+                for (let i = 0; i < 5; i++) {
+                    const apple = document.createElement('div');
+                    apple.className = 'mystery-apple';
+                    applesContainer.appendChild(apple);
+                }
+            }
+            
+            // Olmalarni ko'rish
+            revealBtn.addEventListener('click', function() {
+                if (applesRevealed) return;
+                
+                applesRevealed = true;
+                revealBtn.disabled = true;
+                revealBtn.textContent = 'Butun olmani tanlang 👆 Kegingi qatorni koring';
+                gameActive = true;
+                revealApples();
+            });
+            
+            // Olmalarni ochish
+            function revealApples() {
+                applesContainer.innerHTML = '';
+                
+                const totalApples = 5;
+                let bittenApplesCount = 1; // 1-3 qatorlarda 1 ta tishlangan olma
+                
+                if (currentRound >= 4 && currentRound <= 5) {
+                    bittenApplesCount = 2; // 4-5 qatorlarda 2 ta tishlangan olma
+                } else if (currentRound === 6) {
+                    bittenApplesCount = 3; // 6-qatorda 3 ta tishlangan olma
+                }
+                
+                // Tishlangan olmalarni belgilash
+                const bittenAppleIndices = [];
+                while (bittenAppleIndices.length < bittenApplesCount) {
+                    const randomIndex = Math.floor(Math.random() * totalApples);
+                    if (!bittenAppleIndices.includes(randomIndex)) {
+                        bittenAppleIndices.push(randomIndex);
+                    }
+                }
+                
+                for (let i = 0; i < totalApples; i++) {
+                    const apple = document.createElement('div');
+                    const isBitten = bittenAppleIndices.includes(i);
+                    
+                    apple.className = isBitten ? 'apple bitten' : 'apple whole';
+                    apple.dataset.index = i;
+                    apple.dataset.type = isBitten ? 'bitten' : 'whole';
+                    
+                    apple.addEventListener('click', function() {
+                        if (!gameActive) return;
+                        selectApple(this);
+                    });
+                    
+                    applesContainer.appendChild(apple);
+                }
+            }
+            
+            // Olma tanlash
+            function selectApple(appleElement) {
+                const appleType = appleElement.dataset.type;
+                gameActive = false;
+                
+                if (appleType === 'bitten') {
+                    // Tishlangan olma - o'yin tugadi
+                    resultMessage.textContent = "❌ Tishlangan olma! O'yin tugadi. Qayta urinib ko'ring! 🔄";
+                    resultMessage.className = 'result-message failure';
+                    resultMessage.classList.remove('hidden');
+                    restartBtn.classList.remove('hidden');
+                } else {
+                    // Butun olma - o'yin davom etadi
+                    resultMessage.textContent = "✅ Butun olma! Tabriklaymiz! O'yinni davom ettiring! 💰";
+                    resultMessage.className = 'result-message success';
+                    resultMessage.classList.remove('hidden');
+                    
+                    // Agar maksimal qatorga yetgan bo'lsa, o'yinni tugatish
+                    if (currentRound >= maxRounds) {
+                        setTimeout(() => {
+                            gameSection.classList.add('hidden');
+                            showGameOverSection();
+                        }, 2000);
+                    } else if (currentRound < 6) {
+                        // Taklif qilish bo'limiga o'tish
+                        setTimeout(() => {
+                            gameSection.classList.add('hidden');
+                            startShareSection();
+                        }, 2000);
+                    } else {
+                        // Oltinchi bosqichdan keyin yutuq bo'limiga o'tish
+                        setTimeout(() => {
+                            gameSection.classList.add('hidden');
+                            showPrizeSection();
+                        }, 2000);
+                    }
+                }
+            }
+            
+            // Taklif qilish bo'limini boshlash
+            function startShareSection() {
+                shareSection.classList.remove('hidden');
+                shareUserId.textContent = currentUserId;
+                shareRoundIndicator.textContent = `Signal: ${currentRound}`;
+                // Keyingi qator tugmasini yashirish
+                continueAfterShareBtn.classList.add('hidden');
+                shared = false;
+            }
+            
+            // Telegram avtomatik tarqatish tugmasi
+            telegramAutoBtn.addEventListener('click', function() {
+                // Telegram Share API orqali to'g'ridan-to'g'ri share qilish
+                const shareUrl = `https://t.me/share/url?url=https://t.me/Strategioyinlar_bot&text=${encodeURIComponent(telegramMessage)}`;
+                
+                // Yangi oyna ochish
+                const newWindow = window.open(shareUrl, '_blank', 'width=600,height=700');
+                
+                // Tarqatish amalga oshirildi deb belgilash
+                shared = true;
+                
+                // "Keyingi Qatorni Ko'rish" tugmasini ko'rsatish
+                continueAfterShareBtn.classList.remove('hidden');
+                
+                // Agar brauzer yangi oynani bloklasa
+                if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+                    // Alternative usul - to'g'ridan-to'g'ri Telegram'ga yo'naltirish
+                    window.location.href = `tg://msg?text=${encodeURIComponent(telegramMessage)}`;
+                    
+                    // Agar tg:// ishlamasa, oddiy havola
+                    setTimeout(() => {
+                        window.open(shareUrl, '_blank');
+                    }, 1000);
+                }
+            });
+            
+            // Taklif qilgandan keyin davom etish
+            continueAfterShareBtn.addEventListener('click', function() {
+                // Faqat tarqatish amalga oshirilgan bo'lsa davom etish
+                if (shared) {
+                    currentRound++;
+                    shareSection.classList.add('hidden');
+                    startHackerAnimation();
+                } else {
+                    alert("Iltimos, avval do'stlaringizga xabarni ulashing!");
+                }
+            });
+            
+            // Qayta boshlash tugmasi
+            restartBtn.addEventListener('click', function() {
+                currentRound = 1;
+                // Yangi tasodifiy maksimal qatorlar soni
+                maxRounds = Math.floor(Math.random() * 4) + 3;
+                startHackerAnimation();
+            });
+            
+            // O'yin tugadi bo'limini ko'rsatish
+            function showGameOverSection() {
+                gameOverSection.classList.remove('hidden');
+                gameOverUserId.textContent = currentUserId;
+                finalRound.textContent = currentRound;
+            }
+            
+            // O'yin tugagandan keyin qayta boshlash
+            restartAfterGameOverBtn.addEventListener('click', function() {
+                currentRound = 1;
+                // Yangi tasodifiy maksimal qatorlar soni
+                maxRounds = Math.floor(Math.random() * 4) + 3;
+                gameOverSection.classList.add('hidden');
+                startHackerAnimation();
+            });
+            
+            // Yutuq bo'limini ko'rsatish
+            function showPrizeSection() {
+                prizeSection.classList.remove('hidden');
+                prizeUserId.textContent = currentUserId;
+            }
+            
+            // Qayta o'ynash tugmasi
+            playAgainBtn.addEventListener('click', function() {
+                currentRound = 1;
+                // Yangi tasodifiy maksimal qatorlar soni
+                maxRounds = Math.floor(Math.random() * 4) + 3;
+                prizeSection.classList.add('hidden');
+                startHackerAnimation();
+            });
+            
+            // Sahifa yuklanganda saqlangan ID ni yuklash
+            loadSavedUserId();
+        });
     </script>
 </body>
 </html>
